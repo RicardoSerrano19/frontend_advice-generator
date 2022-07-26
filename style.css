@@ -2,7 +2,7 @@
 
 :root{
     --light-cyan: hsl(193, 38%, 86%);
-    --neon-green: hsl(150, 100%, 66%);
+    --neon-green: hsl(150, 90%, 48%);
     --grayish-blue: hsl(217, 19%, 38%);
     --dark-grayish-blue: hsl(217, 19%, 24%);
     --dark-blue: hsl(218, 23%, 16%);
@@ -78,6 +78,10 @@ body{
     padding: 2rem;
 }
 
+.container__dice:hover{
+    box-shadow: 0px 0px 10px 10px var(--neon-green);
+    filter: brightness(1.2);
+}
 
 /* Animation */
 @keyframes spin {
@@ -92,6 +96,10 @@ body{
 .spin{
     animation: spin 1s infinite linear;
     background-color: var(--grayish-blue);
+}
+
+.spin:hover{
+    box-shadow: none;
 }
 
 @media (min-width: 50rem){
