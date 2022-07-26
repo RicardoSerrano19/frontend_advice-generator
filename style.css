@@ -21,5 +21,42 @@ html {
     font-family: 'Manrope', sans-serif;
 }
 
+body{
+    height: 100vh;
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main */
+.container{
+    background-color: var(--dark-grayish-blue);
+    border-radius: 1rem;
+    width: 90%;
+    padding: 2rem;
+}
+
+.container__title{
+    color: var(--neon-green);
+    letter-spacing: 0.3rem;
+    text-align: center;
+}
+
+.container__advice{
+    color: var(--light-cyan);
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.container__divider{
+    width: 100%;
+    height: 4rem;
+    background-image: url('./images/pattern-divider-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 
 
