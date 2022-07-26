@@ -7,6 +7,7 @@ dice.addEventListener('click', rollDice);
 
 function rollDice(){
     dice.classList.add('spin');
+    dice.disabled = true;
     getAdvice().then(data => {
         const {id, advice} = data.slip;
         title.textContent = `ADVICE # ${id}`;
@@ -16,7 +17,10 @@ function rollDice(){
         console.log('Shometing went wrong :(')
     })
     .finally(() => {
-        dice.classList.remove('spin');
+        setTimeout(() => {
+            dice.classList.remove('spin');
+            dice.disabled = false;
+        },(2000));
     })
 }
 

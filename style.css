@@ -60,6 +60,7 @@ body{
 }
 
 .container__dice{
+    border: none;
     content: '';
     position: absolute;
     width: 2rem;
@@ -90,6 +91,10 @@ body{
 
 .spin{
     animation: spin 1s infinite linear;
+}
+
+.container__dice:disabled{
+    opacity: .5;
 }
 
 
