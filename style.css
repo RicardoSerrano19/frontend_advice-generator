@@ -91,10 +91,7 @@ body{
 
 .spin{
     animation: spin 1s infinite linear;
-}
-
-.container__dice:disabled{
-    opacity: .5;
+    background-color: var(--grayish-blue);
 }
 
 
