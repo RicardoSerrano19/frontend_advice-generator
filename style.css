@@ -35,6 +35,7 @@ body{
     border-radius: 1rem;
     width: 90%;
     padding: 2rem;
+    position: relative;
 }
 
 .container__title{
@@ -56,6 +57,33 @@ body{
     background-image: url('./images/pattern-divider-mobile.svg');
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.container::after{
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: var(--neon-green);
+    background-image: url('./images/icon-dice.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.container::before{
+    content: '';
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: var(--neon-green);
+    border-radius: 50%;
 }
 
 
