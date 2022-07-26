@@ -94,5 +94,11 @@ body{
     background-color: var(--grayish-blue);
 }
 
+@media (min-width: 50rem){
+    .container{
+        max-width: 30rem;
+    }
+}
+
 
 
